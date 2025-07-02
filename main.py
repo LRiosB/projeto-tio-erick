@@ -37,5 +37,15 @@ with st.expander("Dados de input", expanded=True):
     gordura = st.number_input("Gordura (massa gorda)")
     percGordura = st.number_input("Percentual de gordura")
     massaMagraEMuscular = st.number_input("Massa magra e muscular")
-    
+    razaoMusculoGordura = st.number_input("Razão músculo-gordura")
+
+    st.divider()
+
+    razaoCinturaEstatura = st.number_input("Razão cintura-estatura")
+    cinturaPerimetroAbdominal = st.number_input("Cintura/perímetro abdominal")
+
+    st.divider()
+
+    st.text_area("Campo taxa metabólica basal")
+
 
