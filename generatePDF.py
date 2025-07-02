@@ -1,6 +1,15 @@
 from weasyprint import HTML
 
-with open("./template.html", "r") as file:
-    content = str(file.read()).strip()
+def gerarHTML(input="template.html", output="template.pdf", substitutions:dict[str, str]=dict()):
 
-HTML(string=content).write_pdf("./template.pdf")
+    with open(input, "r") as file:
+        htmlContent = str(file.read()).strip()
+
+    for target in substitutions:
+        htmlContent = htmlContent.replace(target, substitutions[target])
+
+    HTML(string=htmlContent).write_pdf(output)
+
+
+if __name__ == "__main__":
+    gerarHTML()
