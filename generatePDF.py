@@ -13,3 +13,4 @@ def gerarHTML(input="template.html", output="template.pdf", substitutions:dict[s
 
 if __name__ == "__main__":
     gerarHTML()
+    # test weasyprint
