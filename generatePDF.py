@@ -1,5 +1,7 @@
 from xhtml2pdf import pisa
+
 import pdfkit
+pdfkitconfig = pdfkit.configuration(wkhtmltopdf="/usr/bin/wkhtmltopdf")
 
 def gerarHTML(input="template.html", output="template.pdf", substitutions:dict[str, str]=dict()):
 
@@ -14,7 +16,7 @@ def gerarHTML(input="template.html", output="template.pdf", substitutions:dict[s
     saveHTMLTOpdf(htmlContent, output)
 
 def saveHTMLTOpdf(htmlcontent, output):
-    pdfkit.from_string(htmlcontent, output)
+    pdfkit.from_string(htmlcontent, output, configuration=pdfkitconfig)
 
 def save_html_to_pdf(html_str: str, output_filename: str) -> bool:
     """
