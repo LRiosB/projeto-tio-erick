@@ -5,3 +5,4 @@ libffi-dev
 shared-mime-info
 libxml2
 libxslt1.1
+libpangoft2-1.0-0
