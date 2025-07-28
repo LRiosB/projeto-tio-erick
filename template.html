@@ -30,12 +30,19 @@
         }
 
         .data {
-            background-color: grey;
+            background-color: rgb(173, 173, 173);
+            break-inside: avoid;
         }
 
         .tooltip {
             background-color: rgb(163, 204, 163);
+            break-inside: avoid;
             /* display: none; */
+        }
+
+        .data h3, .data h2 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
@@ -141,6 +148,61 @@
             <li>Este Biomarcador é um cálculo indireto do seu metabolismo, evidenciando o gasto calórico / quantidade energética de uma pessoa num período de 24 horas, só para manter seus órgãos vitais e todos os sistemas em funcionamento.</li>
             <li>O metabolismo pode se definido como um conjunto de processos químicos e físicos que ocorrem em nosso organismo para suprir as necessidades energéticas do nosso corpo, e esta energia é proveniente em sua grande maioria dos alimentos.</li>
             <li>A taxa metabólica basal é também uma estimativa do ritmo de gasto calórico necessário para manter outras funções muito importantes para a sua saúde (tais como manter o funcionamento dos músculos nas atividades físicas e ter uma boa digestão dos alimentos para se conseguir esta energia e necessidade calórica do nosso organismo) e traz uma classificação desta pessoa em um perfil mais lento ou mais acelerado de seu metabolismo.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h1>Mapa da saúde</h1>
+        
+        <h2>Perfil de saúde:</h2>
+
+        <ul class="data">
+            <h2>Problemas de saúde encontrados: </h2>
+            <li>[INPUT_PROBLEMAS_MAPA_SAUDE]</li>
+            <h2>Riscos preditivos à saúde:</h2>
+
+            <h3>Risco cardiovascular:</h1>
+            <li>Score atual: [INPUT_SCORE_MAPA_SAUDE_CARDIOVASCULAR]</li>
+            <li>Indicadores laboratoriais: [INPUT_INDICADORES_LABORATORIAIS]</li>
+
+            <h3>Risco metabólico:</h3>
+            <li>Risco de diabetes: [INPUT_RISCO_DIABETES]</li>
+            <li>Síndrome metabólica: [INPUT_SINDROME_METABOLICA]</li>
+
+            <h3>Risco inflamatório:</h3>
+            <li>[INPUT_RISCO_INFLAMATORIO]</li>
+
+            <h3>Risco de disbiose intestinal</h3>
+            <li>[INPUT_DISBIOSE_INTESTINAL]</li>
+        </ul>
+
+        <ul class="data">
+            <h2>Relatório do estilo de vida:</h2>
+            <li>[INPUT_RELATORIO_ESTILO_VIDA]</li>
+        </ul>
+
+        <ul class="data">
+            <h2>Nota de saúde: </h2>
+            <li>[INPUT_NOTA_SAUDE]</li>
+        </ul>
+
+        <ul class="data">
+            <h3>Inclusão em protocolos de saúde</h3>
+            <p>( ) <a href="https://www.google.com">Protocolo saúde mental</a></p>
+            <p>( ) <a href="https://www.google.com">Protocolo saúde intestinal</a></p>
+            <p>( ) <a href="https://www.google.com">Protocolo detox</a></p>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h1>Avaliação postural 3D</h1>
+
+        <ul class="data">
+            <li>Seu status postural atual: [INPUT_STATUS_POSTURAL]</li>
+        </ul>
+
+        <ul class="data">
+            <li>Risco(s) ortopédico(s) para a prática do exercício físico: [INPUT_RISCOS_ORTOPEDICOS_EXERCICIO]</li>
         </ul>
     </div>
 
